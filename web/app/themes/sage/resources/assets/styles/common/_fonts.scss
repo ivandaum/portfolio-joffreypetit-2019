@@ -1,0 +1,125 @@
+// @include fontLoader(
+//   $ft-light,
+//   (
+//     "woff":"light/AktivGrotesk-Light.woff",
+//     "svg":"light/AktivGrotesk-Light.svg#AktivGrotesk-Light.svg",
+//     "embedded-opentype2":"light/Dalton Maag - Aktiv Grotesk Light.eot?#iefix",
+//     "woff2":"light/Dalton Maag - Aktiv Grotesk Light.woff2",
+//     "truetype":"light/AktivGrotesk-Light.ttf",
+//     "embedded-opentype":"light/Dalton Maag - Aktiv Grotesk Light.eot"
+//   )
+// );
+// @include fontLoader(
+//   $ft-light,
+//   (
+//     "woff":"light-italic/AktivGrotesk-LightItalic.woff",
+//     "svg":"light-italic/AktivGrotesk-LightItalic.svg#AktivGrotesk-LightItalic.svg",
+//     "embedded-opentype2":"light-italic/Dalton Maag - Aktiv Grotesk Light Italic.eot?#iefix",
+//     "woff2":"light-italic/Dalton Maag - Aktiv Grotesk Light Italic.woff2",
+//     "truetype":"light-italic/AktivGrotesk-LightItalic.ttf",
+//     "embedded-opentype":"light-italic/Dalton Maag - Aktiv Grotesk Light Italic.eot"
+//   ),
+//   italic
+// );
+// @include fontLoader(
+//   $ft-regular,
+//   (
+//     "woff":"regular/AktivGrotesk-Regular.woff",
+//     "svg":"regular/AktivGrotesk-Regular.svg#AktivGrotesk-Regular.svg",
+//     "embedded-opentype2":"regular/Dalton Maag - Aktiv Grotesk.eot?#iefix",
+//     "woff2":"regular/Dalton Maag - Aktiv Grotesk.woff2",
+//     "truetype":"regular/AktivGrotesk-Regular.ttf",
+//     "embedded-opentype":"regular/Dalton Maag - Aktiv Grotesk.eot"
+//   )
+// );
+// @include fontLoader(
+//   $ft-regular,
+//   (
+//     "woff":"regular-italic/AktivGrotesk-Italic.woff",
+//     "svg":"regular-italic/AktivGrotesk-Italic.svg#AktivGrotesk-Italic",
+//     "embedded-opentype2":"regular-italic/Dalton Maag - Aktiv Grotesk Italic.eot?#iefix",
+//     "woff2":"regular-italic/Dalton Maag - Aktiv Grotesk Italic.woff2",
+//     "truetype":"regular-italic/AktivGrotesk-Italic.ttf",
+//     "embedded-opentype":"regular-italic/Dalton Maag - Aktiv Grotesk Italic.eot"
+//   ),
+//   italic
+// );
+// @include fontLoader(
+//   $ft-medium,
+//   (
+//     "woff":"medium/AktivGrotesk-Medium.woff",
+//     "svg":"medium/AktivGrotesk-Medium.svg#AktivGrotesk-Medium",
+//     "embedded-opentype2":"medium/Dalton Maag - Aktiv Grotesk Medium.eot?#iefix",
+//     "woff2":"medium/Dalton Maag - Aktiv Grotesk Medium.woff2",
+//     "truetype":"medium/AktivGrotesk-Medium.ttf",
+//     "embedded-opentype":"medium/Dalton Maag - Aktiv Grotesk Medium.eot"
+//   )
+// );
+// @include fontLoader(
+//   $ft-medium,
+//   (
+//     "woff":"medium-italic/AktivGrotesk-MediumItalic.woff",
+//     "svg":"medium-italic/AktivGrotesk-MediumItalic.svg#AktivGrotesk-MediumItalic",
+//     "embedded-opentype2":"medium-italic/Dalton Maag - Aktiv Grotesk Medium Italic.eot?#iefix",
+//     "woff2":"medium-italic/Dalton Maag - Aktiv Grotesk Medium Italic.woff2",
+//     "truetype":"medium-italic/AktivGrotesk-MediumItalic.ttf",
+//     "embedded-opentype":"medium-italic/Dalton Maag - Aktiv Grotesk Medium Italic.eot"
+//   ),
+//   italic
+// );
+
+
+@font-face {
+  font-family: "AktivGrotesk-Light";
+  src: url("/app/themes/sage/resources/assets/fonts/light/AktivGrotesk-Light.woff") format("woff");
+  // url("/app/themes/sage/dist/fonts/light/Dalton Maag - Aktiv Grotesk Light.eot?#iefix") format("embedded-opentype"),
+  // url("/app/themes/sage/dist/fonts/light/AktivGrotesk-Light.woff") format("woff"),
+  // url("/app/themes/sage/dist/fonts/light/AktivGrotesk-Light.ttf") format("truetype"),
+  // url("/app/themes/sage/dist/fonts/light/AktivGrotesk-Light.svg") format("svg");
+}
+
+// @font-face {
+//   font-family: "AktivGrotesk-Light";
+//   src: url("/app/themes/sage/dist/fonts/light-italic/Dalton Maag - Aktiv Grotesk Light Italic.eot?#iefix") format("embedded-opentype"),
+//   url("/app/themes/sage/dist/fonts/light-italic/AktivGrotesk-LightItalic.woff") format("woff"),
+//   url("/app/themes/sage/dist/fonts/light-italic/AktivGrotesk-LightItalic.ttf") format("truetype"),
+//   url("/app/themes/sage/dist/fonts/light-italic/AktivGrotesk-LightItalic.svg") format("svg");
+//   font-style: italic;
+// }
+
+@font-face {
+  font-family: "AktivGrotesk-Regular";
+  src: url("/app/themes/sage/resources/assets/fonts/regular/AktivGrotesk-Regular.woff") format("woff");
+
+  // url("/app/themes/sage/dist/fonts/regular/Dalton Maag - Aktiv Grotesk.eot?#iefix") format("embedded-opentype"),
+  // url("/app/themes/sage/dist/fonts/regular/AktivGrotesk-Regular.woff") format("woff"),
+  // url("/app/themes/sage/dist/fonts/regular/AktivGrotesk-Regular.ttf") format("truetype"),
+  // url("/app/themes/sage/dist/fonts/regular/AktivGrotesk-Regular.svg") format("svg");
+}
+
+// @font-face {
+//   font-family: "AktivGrotesk-Regular";
+//   src: url("/app/themes/sage/dist/fonts/regular-italic/Dalton Maag - Aktiv Grotesk Italic.eot?#iefix") format("embedded-opentype"),
+//   url("/app/themes/sage/dist/fonts/regular-italic/AktivGrotesk-Italic.woff") format("woff"),
+//   url("/app/themes/sage/dist/fonts/regular-italic/AktivGrotesk-Italic.ttf") format("truetype"),
+//   url("/app/themes/sage/dist/fonts/regular-italic/AktivGrotesk-Italic.svg") format("svg");
+//   font-style: italic;
+// }
+
+@font-face {
+  font-family: "AktivGrotesk-medium";
+  src: url("/app/themes/sage/resources/assets/fonts/medium/AktivGrotesk-Medium.woff") format("woff");
+  // src: url("/app/themes/sage/dist/fonts/medium/Dalton Maag - Aktiv Grotesk Medium.eot?#iefix") format("embedded-opentype"),
+  // url("/app/themes/sage/dist/fonts/medium/AktivGrotesk-Medium.woff") format("woff"),
+  // url("/app/themes/sage/dist/fonts/medium/AktivGrotesk-Medium.ttf") format("truetype"),
+  // url("/app/themes/sage/dist/fonts/medium/AktivGrotesk-Medium.svg") format("svg");
+}
+
+// @font-face {
+//   font-family: "AktivGrotesk-medium";
+//   src: url("/app/themes/sage/dist/fonts/medium-italic/Dalton Maag - Aktiv Grotesk Medium Italic.eot?#iefix") format("embedded-opentype"),
+//   url("/app/themes/sage/dist/fonts/medium-italic/AktivGrotesk-MediumItalic.woff") format("woff"),
+//   url("/app/themes/sage/dist/fonts/medium-italic/AktivGrotesk-MediumItalic.ttf") format("truetype"),
+//   url("/app/themes/sage/dist/fonts/medium-italic/AktivGrotesk-MediumItalic.svg") format("svg");
+//   font-style: italic;
+// }

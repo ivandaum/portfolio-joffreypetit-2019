@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: white;
+  font-style: normal;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+input,
+button {
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+a:hover {
+  text-decoration:none;
+}

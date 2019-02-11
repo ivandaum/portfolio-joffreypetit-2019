@@ -1,0 +1,10 @@
+@include desktop-xs-up {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+@include desktop-xs-down {
+  .hidden-phone {
+    display:none !important;
+  }
+}

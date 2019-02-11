@@ -1,0 +1,10 @@
+@for $i from 1 to 101 {
+  .width--#{$i} {
+    width: #{$i}#{"%"};
+  }
+  @include desktop-s-down {
+    .width--#{$i} {
+      width: 100%;
+    }
+  }
+}
