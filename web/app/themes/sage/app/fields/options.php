@@ -14,17 +14,18 @@ if( function_exists('acf_add_options_page') ) {
         'menu_slug' 	=> 'introduction',
         'capability'	=> 'edit_posts',
         'redirect'		=> false,
-        'position'      => 4
+        'position'    => 4
     ));
 }
 
 $options = new FieldsBuilder('options');
 $options
     ->setLocation('options_page', '==', 'introduction')
-    ->addText('texte_fr', [
+    ->addfile('intro_video', ['label' => 'Vidéo d\'introduction'])
+    ->addText('intro_text_fr', [
       'label' => 'Texte d\'introduction 🇫🇷',
     ])
-    ->addText('texte_en', [
+    ->addText('intro_text_en', [
       'label' => 'Texte d\'introduction 🇬🇧',
     ]);
 

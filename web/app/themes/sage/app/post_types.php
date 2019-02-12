@@ -15,7 +15,7 @@ add_action( 'init', function () {
       'add_new_item'          => __( 'Ajouter un projet', 'text_domain' ),
       'add_new'               => __( 'Ajouter un projet', 'text_domain' ),
       'new_item'              => __( 'Nouveau projet', 'text_domain' ),
-      'edit_item'             => __( 'Modifier une projet', 'text_domain' ),
+      'edit_item'             => __( 'Modifier un projet', 'text_domain' ),
       'update_item'           => __( 'Mettre à jour un projet', 'text_domain' ),
       'view_item'             => __( 'Voir le projet', 'text_domain' ),
       'view_items'            => __( 'Voir les projets', 'text_domain' ),

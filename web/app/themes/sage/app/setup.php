@@ -150,7 +150,11 @@ add_action('init', function () {
  * Create custom post types
  */
 include 'post_types.php';
+include 'model/Project.php';
 
+/**
+ * Remove admin menu tabs
+ */
 add_action( 'admin_menu', function() {
   remove_menu_page( 'index.php' );                  //Dashboard
   remove_menu_page( 'jetpack' );                    //Jetpack* 
@@ -164,3 +168,5 @@ add_action( 'admin_menu', function() {
   remove_menu_page( 'tools.php' );                  //Tools
   // // remove_menu_page( 'options-general.php' );        //Settings
 });
+
+show_admin_bar(false);
