@@ -169,4 +169,5 @@ add_action( 'admin_menu', function() {
   // // remove_menu_page( 'options-general.php' );        //Settings
 });
 
+wp_deregister_script('jquery');
 show_admin_bar(false);
