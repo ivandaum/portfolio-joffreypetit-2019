@@ -1,0 +1,65 @@
+.projects-content {
+  height:100vh;
+  display:flex;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 160px;
+
+  &__project {
+    position:relative;
+    margin-right:80px;
+    flex: 0 0 auto;
+    height: 40vh;
+    width: 40vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+    filter:$filter;
+    -webkit-filter:$filter;
+    -moz-filter:$filter;
+
+    transition: filter 0.5s;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    color:$c-white;
+    text-decoration: none;
+    text-align:center;
+
+    > div {
+      opacity:0;
+      transition: opacity 0.5s;
+    }
+    
+    &:hover {
+      filter: none;
+
+      div {
+        opacity:1;
+      }
+    }
+  }
+  
+  h2, span {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 80%;
+  }
+
+  &__project-title {
+    font-weight: bold;
+    font-size:4rem;
+    line-height:5rem;
+    margin:0;
+  }
+
+  &__project-subtitle {
+    font-size:2rem;
+    line-height:2rem;
+  }
+}

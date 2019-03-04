@@ -34,12 +34,12 @@ class Project
 
       $f['url'] = \get_permalink($p->ID);
       $f['type'] = $p->post_type;
+      $f['slug'] = $p->slug;
       $f['title'] = $p->post_title;
       $f['description'] = get_field('description',$p->ID);
       
       $f['preview'] = [
-        'image' => get_field('preview_image',$p->ID)['url'] ?: null,
-        'video' => get_field('preview_video',$p->ID)['url'] ?: null
+        'image' => get_field('preview_image',$p->ID)['sizes']['large'] ?: null
       ];
 
       $f['content'] = [];
@@ -52,9 +52,10 @@ class Project
         if(!$type) continue;
 
         if($type == 'image') {
-          $entry = ['type' => 'image', 'url' => $c['image']['url']];
-        } else if($type == 'youtube') {
-          $entry = ['type' => 'youtube', 'url' => $c['url']];
+          $entry = [
+            'type' => 'image',
+            'url' => $c['image']['sizes']['large']
+          ];
         }
 
         $f['content'][] = $entry;

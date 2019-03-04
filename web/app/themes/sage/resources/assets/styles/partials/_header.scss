@@ -1,0 +1,30 @@
+.main-header {
+  position:absolute;
+  padding: 80px;
+  left:0;
+  top:0;
+  text-transform: uppercase;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  z-index:50;
+  &__title {
+    display:block;
+    font-weight: bold;
+    font-size:2rem;
+    margin:0;
+    text-decoration: none;
+    color:$c-white;
+    span {
+      margin-left:30px;
+      font-size:1.2rem;
+      font-weight: normal;
+    }
+  }
+
+  &__about-link {
+    color:$c-white;
+    text-decoration:none;
+  }
+}

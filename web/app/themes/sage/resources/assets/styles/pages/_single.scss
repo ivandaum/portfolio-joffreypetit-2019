@@ -1,0 +1,118 @@
+.project-content {
+  &__title {
+    position:absolute;
+    bottom:160px;
+    left:80px;
+    z-index:15;
+  }
+
+  &__main-title {
+    font-size:5rem;
+    color:$c-pink;
+    width:250px;
+  }
+
+  &__main-subtitle {
+    width:350px;
+  }
+
+  &__navigation-left, &__navigation-right {
+    position:absolute;
+    top:0;
+    bottom:0;
+    color:$c-white;
+    font-size:4rem;
+    height:300px;
+    width:300px;
+    margin:auto;
+    text-align:center;
+    line-height:5rem;
+    z-index:25;
+    border:1px solid $c-white;
+    border-radius:50%;
+    transition: right 0.5s, left 0.5s, padding 0.5s;
+  }
+
+  &__navigation-left {
+    left:-200px;
+    padding-right:25px;
+    text-align:right;
+
+    &:hover {
+      left:-150px;
+      padding-right:85px;
+    }
+  }
+
+  &__navigation-right {
+    right:-200px;
+    padding-left:25px;
+    text-align:left;
+    
+    &:hover {
+      right:-150px;
+      padding-left:85px;
+    }
+  }
+
+  &__main-subtitle {
+
+  }
+
+  &__pictures {
+    overflow: hidden;
+    height: 100vh;
+    padding: 150px 0;
+    display:flex;
+  }
+
+  &__group-picture {
+    width:100vw;
+    padding:0;
+    height:100%;
+    align-items: center;
+    display:flex;
+    flex: 0 0 auto;
+    position:relative;
+  }
+
+  &__picture {
+    flex: 0 0 auto;
+    display:block;
+    max-height: 100%;
+    position:absolute;
+    z-index:1;
+    right:0;
+    left:0;
+    margin:auto;
+    transition:transform 0.5s, filter 0.5s;
+
+    filter:$filter;
+    -webkit-filter:$filter;
+    -moz-filter:$filter;
+
+    &:nth-of-type(3n+1) {
+      max-height:50%;
+      left:-40%;
+      top:10%;
+      z-index:5;
+    }
+    &:nth-of-type(3n+2) {
+      top:0;
+      bottom:0;
+      z-index:4;
+      max-width:50%;
+    }
+    &:nth-of-type(3n+3) {
+      max-height:50%;
+      right:-50%;
+      bottom: 5%;
+      z-index:3;
+    }
+    &:hover {
+      z-index:10;
+      transform:scale(1.05);
+      filter:none;
+    }
+  }
+}

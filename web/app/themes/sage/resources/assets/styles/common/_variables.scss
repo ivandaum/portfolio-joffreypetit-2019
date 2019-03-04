@@ -5,7 +5,8 @@ $ft-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue
 /** Colors **/
 $c-black: #000;
 $c-white: #fff;
-
+$c-grey: #1f1f1f;
+$c-pink: #ffc8a9;
 /** Size **/
 $desktop-size: 1440px;
 $desktop-m-size: 1375px;
@@ -17,3 +18,5 @@ $desktop-padding: 70px;
 
 /** Typography **/
 $base-font-size: 16px;
+
+$filter: saturate(150%) sepia(70%) brightness(100%);
