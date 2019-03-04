@@ -166,8 +166,8 @@ add_action( 'admin_menu', function() {
   remove_menu_page( 'plugins.php' );                //Plugins
   remove_menu_page( 'users.php' );                  //Users
   remove_menu_page( 'tools.php' );                  //Tools
-  // // remove_menu_page( 'options-general.php' );        //Settings
+  // remove_menu_page( 'options-general.php' );        //Settings
 });
 
-wp_deregister_script('jquery');
+// wp_deregister_script('jquery');
 show_admin_bar(false);
