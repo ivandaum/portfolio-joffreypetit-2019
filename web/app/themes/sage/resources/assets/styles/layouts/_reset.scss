@@ -21,6 +21,12 @@ body {
   }
 }
 
+@include phone {
+  body {
+    overflow: auto;
+    height:auto;
+  }
+}
 * {
   box-sizing: border-box;
 }

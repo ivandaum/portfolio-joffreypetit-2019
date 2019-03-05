@@ -7,6 +7,10 @@
         <button class="project-content__navigation-left">←</button>
         <button class="project-content__navigation-right">→</button>
       </div>
+      <div class="project-content__title">
+        <h2 class="project-content__main-title">{{ $project['title'] }}</h2>
+        @if($project['description'])<p class="project-content__main-subtitle">{{ $project['description'] }}</p>@endif
+      </div>
       <div class="project-content__pictures">
         @for($i = 0; $i < count($project['content']); $i++)
           @if($i != 0 && $i % 3 == 0) </div> @endif
@@ -14,10 +18,6 @@
           <img src="{{ $project['content'][$i]['url'] }}" alt="{{ $project['title'] . $i }}" class="project-content__picture" />
         @endfor
         </div>
-      </div>
-      <div class="project-content__title">
-        <h2 class="project-content__main-title">{{ $project['title'] }}</h2>
-        @if($project['description'])<p class="project-content__main-subtitle">{{ $project['description'] }}</p>@endif
       </div>
     </div>
   </div>

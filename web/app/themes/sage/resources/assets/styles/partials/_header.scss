@@ -29,6 +29,11 @@
   }
 }
 
+@include tablet {
+  .main-header {
+    padding:40px;
+  }
+}
 @include phone {
   .main-header {
     padding:20px;

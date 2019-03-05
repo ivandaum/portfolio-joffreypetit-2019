@@ -3,7 +3,12 @@
   bottom: 80px;
   left:80px;
 }
-
+@include tablet {
+  .scroll-helper {
+    left:40px;
+    bottom:40px;
+  }
+}
 @include phone {
   .scroll-helper {
     left:20px;
