@@ -28,7 +28,11 @@ for($i = $currentYear; $i > $currentYear - 15; $i--) {
 $about = new FieldsBuilder('about');
 $about
     ->setLocation('options_page', '==', 'a-propos')
-    // ->addW
+    ->addWysiwyg('description')
+    ->addGroup('contact', ['label' => 'Informations de contact'])
+      ->addEmail('email', ['label' => 'Email'])
+      ->addText('tel', ['label' => 'Téléphone'])
+    ->endGroup()
     ->addfile('resume', ['label' => 'CV'])
     ->addImage('image_1', [
       'label' => 'Image haute gauche',

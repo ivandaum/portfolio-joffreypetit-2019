@@ -13,6 +13,17 @@ class App extends Controller
       return $projects;
     }
 
+    static public function splitTel($tel) {
+      $arr = str_split($tel);
+      $out = "";
+      for($i = 0; $i < count($arr); $i++) {
+        if($i % 2 == 0 ) $out .= " ";
+
+        $out .= $arr[$i];
+      }
+      return $out;
+    }
+
     public function title() {
       return get_bloginfo('title');
     }
@@ -29,5 +40,31 @@ class App extends Controller
       }
       
       return [];
+    }
+
+    public function contactInformation() {
+      return [
+        'email' => get_field('contact_email','option'),
+        'tel' => get_field('contact_tel','option')
+      ];
+    }
+
+    public function aboutMe() {
+      return get_field('description','option');
+    }
+
+    public function resume() {
+      return get_field('experiences','option');
+    }
+
+    public function resumePdf() {
+      return get_field('resume','option');
+    }
+
+    public function aboutPictures() {
+      return [
+        'top' => get_field('image_1','option')['sizes']['large'],
+        'bottom' => get_field('image_2','option')['sizes']['large']
+      ];
     }
 }
