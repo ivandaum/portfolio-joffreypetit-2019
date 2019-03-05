@@ -2,7 +2,11 @@
 
 @section('content')
   <div class="container" role="document">
-    <div class="scroll-helper">Scrollez pour faire défiler</div>
+    <div class="scroll-helper">
+      <span class="hidden-tablet hidden-phone">Scrollez pour faire défiler</span>
+      <span class="hidden-desktop">Swipez pour faire défiler</span>
+    </div>
+    
     <div class="projects-content">
       @foreach($projects as $project)
         <a href="{{ $project['url'] }}" class="projects-content__project" style="background-image:url('{{$project['preview']['image']}}')">

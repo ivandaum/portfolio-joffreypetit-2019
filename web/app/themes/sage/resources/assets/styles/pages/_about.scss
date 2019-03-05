@@ -1,5 +1,14 @@
 .about-content {
   padding:250px 0;
+
+  &__title {
+    color:$c-pink;
+    font-size:5rem;
+    line-height:5rem;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+
   &__top {
     display: flex;
     justify-content: center;
@@ -11,14 +20,6 @@
     font-size:1.5rem;
     line-height:1.9rem;
     margin-left: 150px;
-
-    &-name {
-      color:$c-pink;
-      font-size:5rem;
-      line-height:5rem;
-      font-weight:bold;
-      text-transform: uppercase;
-    }
 
     &-text {
       color:$c-white;
@@ -95,14 +96,6 @@
     z-index:10;
   }
 
-  &__curriculum-title {
-    color:$c-pink;
-    font-size:5rem;
-    line-height:5rem;
-    font-weight:bold;
-    text-transform: uppercase;
-  }
-
   &__curiculum-column {
     height:auto;
     h2 {
@@ -123,6 +116,100 @@
     p.year {
       color:$c-pink;
       font-weight:bold;
+    }
+  }
+}
+
+@include tablet-phone {
+  .about-content {
+    padding-bottom: 50px;
+    &__aboutme {
+      margin-left: 5%;
+    }
+
+    &__curriculum {
+      margin-top: 50px;
+      padding: 0;
+    }
+
+    &__title {
+      font-size:2.5rem;
+      line-height:2.5rem;
+    }
+
+    &__curriculum-content {
+      margin-top:0;
+      padding-right: 0;
+      display:block;
+      max-height: 100%;
+    }
+
+    &__picture-2 {
+      position:relative;
+      margin-top:25px;
+      margin-left:5%;
+      transform:translateX(0);
+    }
+  }
+}
+
+@include phone {
+  .about-content {
+    padding:0;
+    &__top {
+      display:block;
+    }
+    &__aboutme {
+      max-width:100%;
+      margin:0;
+      font-size:1.2rem;
+      line-height:1.5rem;
+      padding:0 20px;
+
+      &-contact {
+        padding-left: 0;
+        display:flex;
+        a {
+          width: 50%;
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+    &__curiculum-column {
+      h2 {
+        font-size:1.5rem;
+        line-height:1.7rem;
+        margin: 25px 0;
+      }
+  
+      p {
+        line-height:2.5rem;
+        font-size:1.2rem;
+      }
+    }
+
+    &__curriculum-title {
+      padding: 0 20px;
+    }
+
+    &__curriculum {
+      max-width:100%;
+    }
+    &__curriculum-content {
+      padding: 0 20px;
+    }
+    &__picture {
+      position:relative;
+      opacity:0.2;
+      width: 100%;
+    }
+    &__picture-1 {
+      margin:0 0 50px 0;
+    }
+    &__picture-2 {
+      margin:50px 0 0 0;
     }
   }
 }

@@ -5,12 +5,12 @@
     <div class="about-content">
 
       <div class="about-content__top">
-        <div class="about-content__picture-1">
+        <div class="about-content__picture-1 about-content__picture">
           <img src="{{ $about_pictures['top'] }}" alt="{{ $about_pictures['top'] }}" />
         </div>
 
         <div class="about-content__aboutme">
-          <p class="about-content__aboutme-name">Joffrey Petit</p>
+          <p class="about-content__aboutme-name about-content__title">Joffrey Petit</p>
           <div class="about-content__aboutme-text">{!! $about_me !!}</div>
           <div class="about-content__aboutme-contact">
             @if($contact_information['email'])
@@ -24,7 +24,7 @@
       </div>
       
       <div class="about-content__curriculum">
-        <p class="about-content__curriculum-title">Curriculum vitae</p>
+        <p class="about-content__curriculum-title about-content__title">Curriculum vitae</p>
 
         <div class="about-content__curriculum-content">
         @foreach($resume as $type)
@@ -40,7 +40,7 @@
         @endforeach
         </div>
 
-        <div class="about-content__picture-2">
+        <div class="about-content__picture-2 about-content__picture">
           <img src="{{ $about_pictures['bottom'] }}" alt="{{ $about_pictures['bottom'] }}" />
         </div>
       </div>

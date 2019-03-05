@@ -63,3 +63,57 @@
     line-height:2rem;
   }
 }
+
+@include tablet-phone {
+  .projects-content {
+    overflow-x: scroll;
+    padding:0 80px;
+    &__project {
+      filter:none;
+      -webkit-filter:none;
+      -moz-filter:none;
+      > div {
+        opacity: 1;
+      }
+
+      &:last-child {
+        border-right: $c-grey solid 80px;
+        box-sizing: unset;
+      }
+    }
+
+    h2, span {
+      text-align:center;
+      white-space: normal; 
+      overflow: auto;
+      width: 80%;
+    }
+
+    &__project-title {
+      font-size:3rem;
+      line-height:3.2rem;
+    }
+  
+    &__project-subtitle {
+      margin-top:10px;
+      font-size:1.2rem;
+      line-height:1.5rem;
+    }
+  }
+}
+
+@include phone {
+  .projects-content {
+    padding:0 20px;
+
+    &__project {
+      height:60vh;
+      margin-right:40px;
+
+      &:last-child {
+        border-right: $c-grey solid 20px;
+        box-sizing: unset;
+      }
+    }
+  }
+}

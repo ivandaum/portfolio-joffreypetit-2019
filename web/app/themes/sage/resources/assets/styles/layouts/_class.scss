@@ -1,10 +1,21 @@
-@include desktop-xs-up {
+@include desktop {
   .hidden-desktop {
     display: none !important;
   }
 }
-@include desktop-xs-down {
+@include tablet {
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+@include phone {
   .hidden-phone {
     display:none !important;
   }
+}
+
+%nofilter {
+  filter:none;
+  -webkit-filter:none;
+  -moz-filter:none;
 }
