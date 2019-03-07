@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@dogstudio/highway@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@dogstudio/highway/-/highway-2.1.2.tgz#be09db1e2a98cc17c8e78ca4d3dd926455b58726"
+  integrity sha512-5I6QpHk4RkteSLeP9NKXpRcSFb4dypys/Cjd09K+OCf0WyNM6FGH2Dg9m3wLF7HCrLD8YLMcZfluwcUBwxmg6w==
+  dependencies:
+    tiny-emitter "^2.0.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -9407,6 +9414,11 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+
+tiny-emitter@^2.0.2:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
+  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
 tmp@^0.0.33:
   version "0.0.33"

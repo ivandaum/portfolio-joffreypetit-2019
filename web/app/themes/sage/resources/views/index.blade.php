@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="container" role="document">
+  <div class="container" role="document" data-router-view="home">
     <div class="scroll-helper">
       <span class="hidden-tablet hidden-phone">Scrollez pour faire défiler</span>
       <span class="hidden-desktop hidden-phone">Swipez pour faire défiler</span>

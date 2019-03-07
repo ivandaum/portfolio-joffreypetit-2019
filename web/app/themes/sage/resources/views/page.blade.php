@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="container" role="document">
+  <div class="container" role="document" data-router-view="page">
     <div class="about-content">
 
       <div class="about-content__top">

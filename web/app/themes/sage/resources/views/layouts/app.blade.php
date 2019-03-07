@@ -11,7 +11,7 @@
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     @include('partials.header')
-    <main class="main wrap">
+    <main class="main wrap" data-router-wrapper>
       @yield('content')
     </main>
     @php wp_footer() @endphp

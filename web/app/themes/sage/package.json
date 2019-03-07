@@ -76,6 +76,7 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "@dogstudio/highway": "^2.1.2",
     "jquery": "^3.3.1"
   }
 }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="container" role="document">
+  <div class="container" role="document" data-router-view="single">
     <div class="project-content">
       <div class="project-content__navigation">
         <button class="project-content__navigation-left">←</button>
