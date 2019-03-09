@@ -3,10 +3,13 @@
 @section('content')
   <div class="container" role="document" data-router-view="single">
     <div class="project-content">
+
+      @if(count($project['content']) > 3)
       <div class="project-content__navigation">
-        <button class="project-content__navigation-left">←</button>
-        <button class="project-content__navigation-right">→</button>
+        <button class="project-content__navigation-left" data-direction="-1">←</button>
+        <button class="project-content__navigation-right" data-direction="1">→</button>
       </div>
+      @endif
       <div class="project-content__title">
         <h2 class="project-content__main-title">{{ $project['title'] }}</h2>
         @if($project['description'])<p class="project-content__main-subtitle">{{ $project['description'] }}</p>@endif

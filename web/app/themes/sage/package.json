@@ -77,6 +77,8 @@
   },
   "dependencies": {
     "@dogstudio/highway": "^2.1.2",
+    "animejs": "^3.0.1",
+    "flickity": "^2.2.0",
     "jquery": "^3.3.1"
   }
 }

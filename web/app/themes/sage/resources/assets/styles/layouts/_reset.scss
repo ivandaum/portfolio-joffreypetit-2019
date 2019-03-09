@@ -15,12 +15,11 @@ body {
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   margin:0;
-
+  
   &.page {
     overflow-y:scroll;
   }
 }
-
 @include phone {
   body {
     overflow: auto;

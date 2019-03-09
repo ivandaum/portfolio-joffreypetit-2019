@@ -1,0 +1,1 @@
+export var MOBILE_SIZE = 1080
