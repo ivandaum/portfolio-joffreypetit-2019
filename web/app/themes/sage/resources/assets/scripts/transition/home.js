@@ -7,7 +7,7 @@ export default class HomeTransition extends Highway.Transition {
   in({ from, to, done }) {
     from.remove()
     
-    to.style.opacity = 1
+    // to.style.opacity = 1
     
     // let projects = document.querySelectorAll('.projects-content__project')
     // let width = projects[0].offsetWidth * projects.length
@@ -24,7 +24,7 @@ export default class HomeTransition extends Highway.Transition {
   }
 
   out({ from, done }) {
-    from.style.opacity = 0
+    // from.style.opacity = 0
     // anime({
     //   targets: from,
     //   translateY: [0,'300px'],
