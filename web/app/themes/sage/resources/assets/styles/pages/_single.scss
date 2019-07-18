@@ -136,6 +136,11 @@
     -webkit-filter:none;
     -moz-filter:none;
   }
+
+  .project-content__group-picture {
+    position:relative;
+    opacity:1 !important;
+  }
 }
 @include tablet {
   .project-content {
